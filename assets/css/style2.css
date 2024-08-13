@@ -1,0 +1,124 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .main{
+    padding-top:100px ;
+    padding-bottom: 100px;
+  }
+  .main-heading {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .main .main-heading p{
+    /* color: #db2988; */
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: linear-gradient(43deg, #C850C0 46%, #FFCC70 54%);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    
+
+  }
+  .main .main-heading h3{
+
+    font-size: 36px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+
+  .box-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 50%;
+
+  }
+  @media (max-width: 991px) {
+    .box-container{
+      flex-basis: 50%;
+      flex-wrap: wrap;
+    }
+  }
+  .box-container .boxes{
+    text-align: center;
+  }
+
+  .fa-pencil-ruler{
+    margin-bottom: 35px;
+    margin-top: 25px;
+    border-radius: 45px;
+    padding: 25px;
+    font-size: 80px;
+    color: #ffffff;
+    background: linear-gradient(-50deg, #C850C0 40%, #FFCC70 93%);
+    -webkit-text-fill-color:transparent;
+  } 
+
+  .box-container .boxes h4{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+  .box-container .boxes p{
+    margin: 20px;
+    color: #777;
+  }
+
+  .boxes{
+    margin: 20px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 10%);
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+.boxes:hover{
+    transform: scale(1.1);
+
+}.boxes:nth-child(even){
+  transform: translateY(40px);
+}
+
+
+
+

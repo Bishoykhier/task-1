@@ -1,0 +1,149 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+  /* Large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .head-text{
+    align-self: center;
+}
+.container .head-text p{
+    text-align: center;
+    color: #FF3938;
+    margin: 50px 50px 0 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+.container .head-text p::after{
+    content: "";
+    position: absolute;
+    left: 63%;
+    background-color: #FF3938;
+    width: 25px;
+    height: 1px;
+    top: 50%;
+}
+.container .head-text h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+@media (max-width:767px) {
+    .container .head-text p::after{
+        left: 69%;
+    }
+    .container .head-text h2{
+        font-size: 30px;
+    }
+}
+
+.container .body-boxes{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:767px) {
+    .container .body-boxes{
+        flex-wrap: wrap;
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.container .body-boxes .box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 8px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 7%);
+    transition: 0.6s;
+}
+.container .body-boxes .box:hover{
+    transform: scale(1.05);
+
+}
+
+.container .body-boxes .box h5{
+    font-weight: bolder;
+    margin: 5px 5px 5px 15px;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.container .body-boxes .box p{
+    color: #777;
+    font-size: 13px;
+    margin: 5px 5px 5px 15px;
+}
+.container .body-boxes .box h6{
+    color: #000;
+    font-size: 15px;
+    margin: 5px 5px 15px 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+.container .body-boxes .box h6::after{
+    content: "";
+    position: absolute;
+    left: 29%;
+    top: 34%;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    transform: rotate(137deg);
+}
+@media (min-width:768px) {
+    .container .body-boxes .box h6::after{
+        left: 40%;
+    }
+}
+
+
